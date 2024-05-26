@@ -3036,7 +3036,7 @@ radio {
   border-radius: 100%; }
   treeview.view radio:checked:selected,
   radio:checked {
-    -gtk-icon-source: image(-gtk-recolor(url("assets/bullet-symbolic.svg")), -gtk-recolor(url("assets/bullet-symbolic.symbolic.png"))); }
+    -gtk-icon-source: image(-gtk-recolor(url("gtk.gresource/assets/bullet-symbolic.svg")), -gtk-recolor(url("gtk.gresource/assets/bullet-symbolic.symbolic.png"))); }
   treeview.view radio:indeterminate:selected,
   radio:indeterminate {
     -gtk-icon-source: image(-gtk-recolor(url("assets/dash-symbolic.svg")), -gtk-recolor(url("assets/dash-symbolic.symbolic.png"))); }
@@ -4477,9 +4477,12 @@ colorchooser .popover.osd {
 decoration {
   border-radius: 0;
   border-width: 1px;
+  border-style: solid;
+  border-color: #4bae7d;
   box-shadow: none;
   margin: 10px; }
   decoration:backdrop {
+    border-color: #aaa;
     box-shadow: none;}
   .maximized decoration, .fullscreen decoration {
     border-radius: 0;
